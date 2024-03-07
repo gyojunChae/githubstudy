@@ -4,35 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-    <div>
-        공부해보자
-    </div>
-    <div style="text-align: center;">
-        <span id="clock" style="color:gray; font-size: 100px;">clock</span>
-        <span id="apm" style="color:gray; font-size: 50px;"  >ampm</span>
-    </div>
-    <script>
-        var Target = document.getElementById("clock");
-        var Target_apm = document.getElementById("apm");
-        function clock(){
-            var time = new Date();
-            var hours = time.getHours();
-            var minutes = time.getMinutes();
-            var seconds = time.getSeconds();
-            var AmPm = "AM"
-            if(hours > 12){
-                var Ampm = "PM"
-                hours %= 12;
-            }
-            Target.innerText =
-            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
-
-            Target_apm.innerText = `${AmPm}`
-        }
-        clock();
-        setInterval(clock, 1000);
-    </script>
+    <header class="bar">
+        <div class="bar_logo">
+            <i class="fa-solid fa-tag"></i>
+            <a href="">공부하자</a>
+        </div>
+        <div class="bar_menu">
+            <div>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">포럼</a></li>
+                <li><a href="#">시계</a></li>
+            </div>
+        </div>
+        <div class="bar_link">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </header>
 </body>
 </html>
