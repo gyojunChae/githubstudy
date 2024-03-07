@@ -1,6 +1,6 @@
 header{
     margin-top: 10px;
-    border-bottom: 1px solid #ededef;
+    border-bottom: 2px solid #ededef;
     padding-bottom: 10px;
 }
 body{
@@ -14,22 +14,16 @@ body{
     padding: 8px 12px;
 }
 .bar_logo{
-    font-size: 24px;
-    color: gray;
-}
-
-.bar_menu{
     display: flex;
-    list-style: none;
+    justify-content: space-around;
+    padding: 0 15px 0 15px;
 }
 
-.bar_menu {
-    padding: 8px 12px;
+.bar_logo img{
+    margin-right: 20px;
 }
-
-a{
+.bar_logo a{
     text-decoration: none;
-    color: black;
-    padding-left: 0;
+    color: gray;
 }
 
