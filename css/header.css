@@ -33,4 +33,14 @@ body{
     text-decoration: none;
     color: gray;
 }
+.timeTitle {
+    font-size: 20px;
+    color: gray;
+
+}
+.cute-font-regular {
+  font-family: "Cute Font", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
