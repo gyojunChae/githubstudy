@@ -1,43 +1,16 @@
-header{
-    margin-top: 10px;
-    border-bottom: 2px solid #ededef;
-    padding-bottom: 10px;
-}
-body{
-    margin: 0;
-}
-
 .bar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-}
-.bar_logo{
-    display: flex;
-    justify-content: space-around;
     padding: 0 15px 0 15px;
 }
 
-.bar_logo img{
-    margin-right: 20px;
-}
-.bar_logo a{
-    text-decoration: none;
-    color: gray;
-}
-
-.bar_menu{
+.bar.bar_menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     text-decoration: none;
     color: gray;
 }
-.timeTitle {
-    font-size: 20px;
-    color: gray;
 
-}
 .cute-font-regular {
   font-family: "Cute Font", sans-serif;
   font-weight: 400;
