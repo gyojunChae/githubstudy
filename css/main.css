@@ -1,0 +1,80 @@
+:root {
+    --accent-color: #f3ff87;
+    --text-color: #f0f4f5;
+    --background-color: #0b002b;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Montserrat';
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar-menu li {
+    margin-right: 15px;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar-icons li {
+    margin-right: 10px;
+  }
+  
+  .navbar-icons img {
+    color: #f0f4f5;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+    .navbar-icons {
+      display: none;
+    }
+  
+    .nav-logo {
+      margin-right: auto;
+    }
+  
+    .navbar {
+      padding: 8px;
+    }
+  
+    .navbar-menu.active,
+    .navbar-icons.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      background-color: var(--background-color);
+      width: 100%;
+    }
+  
+    .navbar-menu.active li,
+    .navbar-icons.active li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
