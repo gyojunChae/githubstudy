@@ -1,0 +1,22 @@
+body {
+    background-image: url("/image/HongJohn/rainbow.jpg");
+    background-size: cover;
+}
+
+#profile {
+    border-style: dotted;
+}
+
+#profile > #text_information {
+    display: inline-block;
+}
+
+#profile > #title {
+    font-style: initial;
+    font-style: oblique;
+    display: block;
+}
+
+#profile > #description {
+    display: block;
+}
